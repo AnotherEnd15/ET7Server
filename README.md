@@ -1,5 +1,5 @@
 # ET7Server
- 基于ET7.2制作.  
+ 基于ET7.2制作的ET独立Server版本,目的是适配各种非ET客户端.    
  数学库换成了System.Numeric  
  Excel目录是配置,导表只导出Json.正式使用自行替换一套导表  
  Proto目录是协议  
