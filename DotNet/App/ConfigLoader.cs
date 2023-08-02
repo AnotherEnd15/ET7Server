@@ -23,7 +23,7 @@ namespace ET.Server
                 string configFilePath;
                 if (startConfigs.Contains(configType.Name))
                 {
-                    configFilePath = $"../Config/Json/{Options.Instance.StartConfig}/{configType.Name}.txt";    
+                    configFilePath = $"../Config/Json/StartConfig/{Options.Instance.StartConfig}/{configType.Name}.txt";    
                 }
                 else
                 {
