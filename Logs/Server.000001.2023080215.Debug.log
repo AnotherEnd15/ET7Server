@@ -1,0 +1,259 @@
+2023-08-02 15:11:06.5228 (Init.cs:35) --CreateScenes 1 --LogLevel 2 --Process 1 --StartConfig StartConfig/Localhost
+2023-08-02 15:11:06.8652 (Scene.cs:52) scene create: Process Process 0 1266435772253470721 0
+2023-08-02 15:11:06.8811 (AsyncETVoidMethodBuilder.cs:26) System.IO.FileNotFoundException: Could not find file 'C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Config\Json\StartConfig\Localhost\StartSceneConfigCategory.txt'.
+File name: 'C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Config\Json\StartConfig\Localhost\StartSceneConfigCategory.txt'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at ET.Server.GetAllConfigBytes.Handle(GetAllConfigBytes args) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\App\ConfigLoader.cs:line 12
+   at ET.EventSystem.Invoke[A,T](Int32 type, A args) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 693
+   at ET.EventSystem.Invoke[A,T](A args) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 703
+   at ET.ConfigComponent.LoadAsync() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 65
+   at ET.ETTask.GetResult() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 126
+   at ET.Entry.StartAsync() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Share\Entry.cs:line 39
+   at ET.ETTask.GetResult() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 126
+   at ET.ETTask.InnerCoroutine() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 71
+2023-08-02 15:15:46.8178 (Init.cs:35) --CreateScenes 1 --LogLevel 2 --Process 1 --StartConfig StartConfig/Localhost
+2023-08-02 15:15:47.1550 (Scene.cs:52) scene create: Process Process 0 1266455013706956801 0
+2023-08-02 15:15:47.2295 (IEvent.cs:26) System.Exception: 配置找不到，配置表名: StartProcessConfig，配置id: 1
+   at ET.StartProcessConfigCategory.Get(Int32 id) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\Config\StartProcessConfig.cs:line 45
+   at ET.Server.EntryEvent2_InitServer.Run(Scene scene, EntryEvent2 args) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Demo\EntryEvent2_InitServer.cs:line 22
+   at ET.ETTask.GetResult() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 126
+   at ET.AEvent`1.Handle(Scene scene, A a) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\IEvent.cs:line 26
+2023-08-02 15:20:31.4392 (Init.cs:35) --CreateScenes 1 --LogLevel 2 --Process 1 --StartConfig StartConfig/Localhost
+2023-08-02 15:20:31.6608 (Scene.cs:52) scene create: Process Process 0 1266474598757826561 0
+2023-08-02 15:20:31.7068 (StartProcessConfig.cs:34) StartProcess info: 1 1 262144
+2023-08-02 15:20:31.7230 (AsyncETVoidMethodBuilder.cs:26) System.ArgumentException: An item with the same key has already been added. Key: Realm
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at ET.StartSceneConfigCategory.AfterEndInit() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\ConfigPartial\StartSceneConfig.cs:line 45
+   at ET.StartSceneConfigCategory.EndInit() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\Config\StartSceneConfig.cs:line 35
+   at ET.ConfigComponent.LoadOneInThread(Type configType, String oneConfigBytes) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 90
+   at ET.ConfigComponent.<>c__DisplayClass6_1.<LoadAsync>b__0() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 73
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at ET.ConfigComponent.LoadAsync() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 77
+   at ET.ETTask.GetResult() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 126
+   at ET.Entry.StartAsync() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Share\Entry.cs:line 39
+   at ET.ETTask.GetResult() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 126
+   at ET.ETTask.InnerCoroutine() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 71
+2023-08-02 15:24:05.1399 (Init.cs:35) --CreateScenes 1 --LogLevel 2 --Process 1 --StartConfig StartConfig/Localhost
+2023-08-02 15:24:05.3529 (Scene.cs:52) scene create: Process Process 0 1266489304725848065 0
+2023-08-02 15:24:05.3988 (StartProcessConfig.cs:34) StartProcess info: 1 1 262144
+2023-08-02 15:24:05.3988 (StartSceneConfig.cs:35) 执行1次
+   at ET.StartSceneConfigCategory.EndInit() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\Config\StartSceneConfig.cs:line 35
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.SerializerBase`1.MongoDB.Bson.Serialization.IBsonSerializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize(IBsonSerializer serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonSerializer.Deserialize(IBsonReader bsonReader, Type nominalType, Action`1 configurator)
+   at MongoDB.Bson.Serialization.BsonSerializer.Deserialize(String json, Type nominalType, Action`1 configurator)
+   at ET.MongoHelper.FromJson(Type type, String str) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Serialize\MongoHelper.cs:line 147
+   at ET.ConfigComponent.LoadOneInThread(Type configType, String oneConfigBytes) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 82
+   at ET.ConfigComponent.<>c__DisplayClass6_1.<LoadAsync>b__0() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 73
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+
+2023-08-02 15:24:05.3988 (StartSceneConfig.cs:35) 执行1次
+   at ET.StartSceneConfigCategory.EndInit() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\Config\StartSceneConfig.cs:line 35
+   at ET.ConfigComponent.LoadOneInThread(Type configType, String oneConfigBytes) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 90
+   at ET.ConfigComponent.<>c__DisplayClass6_1.<LoadAsync>b__0() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 73
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+
+2023-08-02 15:24:05.4169 (AsyncETVoidMethodBuilder.cs:26) System.ArgumentException: An item with the same key has already been added. Key: Realm
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at ET.StartSceneConfigCategory.AfterEndInit() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\ConfigPartial\StartSceneConfig.cs:line 45
+   at ET.StartSceneConfigCategory.EndInit() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\Config\StartSceneConfig.cs:line 36
+   at ET.ConfigComponent.LoadOneInThread(Type configType, String oneConfigBytes) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 90
+   at ET.ConfigComponent.<>c__DisplayClass6_1.<LoadAsync>b__0() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 73
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at ET.ConfigComponent.LoadAsync() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 77
+   at ET.ETTask.GetResult() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 126
+   at ET.Entry.StartAsync() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Share\Entry.cs:line 39
+   at ET.ETTask.GetResult() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 126
+   at ET.ETTask.InnerCoroutine() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\ETTask\ETTask.cs:line 71
+2023-08-02 15:24:37.8666 (Init.cs:35) --CreateScenes 1 --LogLevel 2 --Process 1 --StartConfig StartConfig/Localhost
+2023-08-02 15:24:38.0725 (Scene.cs:52) scene create: Process Process 0 1266491503749103617 0
+2023-08-02 15:24:38.1145 (StartProcessConfig.cs:34) StartProcess info: 1 1 262144
+2023-08-02 15:24:38.1145 (StartSceneConfig.cs:35) 执行1次
+   at ET.StartSceneConfigCategory.EndInit() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\Config\StartSceneConfig.cs:line 35
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.SerializerBase`1.MongoDB.Bson.Serialization.IBsonSerializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize(IBsonSerializer serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonSerializer.Deserialize(IBsonReader bsonReader, Type nominalType, Action`1 configurator)
+   at MongoDB.Bson.Serialization.BsonSerializer.Deserialize(String json, Type nominalType, Action`1 configurator)
+   at ET.MongoHelper.FromJson(Type type, String str) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Serialize\MongoHelper.cs:line 147
+   at ET.ConfigComponent.LoadOneInThread(Type configType, String oneConfigBytes) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 82
+   at ET.ConfigComponent.<>c__DisplayClass6_1.<LoadAsync>b__0() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 73
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+
+2023-08-02 15:24:38.1490 (EventSystem.cs:355) System.TypeInitializationException: The type initializer for 'ET.KService' threw an exception.
+ ---> System.DllNotFoundException: Unable to load DLL 'kcp' or one of its dependencies: 找不到指定的模块。 (0x8007007E)
+   at ET.Kcp.ikcp_setoutput(KcpOutput output)
+   at ET.Kcp.KcpSetoutput(KcpOutput output) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\Kcp\Kcp.cs:line 193
+   at ET.KService..cctor() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Network\KService.cs:line 55
+   --- End of inner exception stack trace ---
+   at ET.KService..ctor(IPEndPoint ipEndPoint, ServiceType serviceType) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Network\KService.cs:line 33
+   at ET.Server.NetInnerComponentSystem.NetInnerComponentAwake1System.Awake(NetInnerComponent self, IPEndPoint address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Message\NetInnerComponentSystem.cs:line 51
+   at ET.AwakeSystem`2.ET.IAwakeSystem<A>.Run(Entity o, A a) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\IAwakeSystem.cs:line 96
+   at ET.EventSystem.Awake[P1](Entity component, P1 p1) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 355
+2023-08-02 15:24:38.1490 (Scene.cs:52) scene create: Realm Realm 1 262145 1
+2023-08-02 15:24:38.1490 (EventSystem.cs:355) System.TypeInitializationException: The type initializer for 'ET.KService' threw an exception.
+ ---> System.DllNotFoundException: Unable to load DLL 'kcp' or one of its dependencies: 找不到指定的模块。 (0x8007007E)
+   at ET.Kcp.ikcp_setoutput(KcpOutput output)
+   at ET.Kcp.KcpSetoutput(KcpOutput output) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\Kcp\Kcp.cs:line 193
+   at ET.KService..cctor() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Network\KService.cs:line 55
+   --- End of inner exception stack trace ---
+   at ET.KService..ctor(IPEndPoint ipEndPoint, ServiceType serviceType) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Network\KService.cs:line 33
+   at ET.Server.NetServerComponentSystem.AwakeSystem.Awake(NetServerComponent self, IPEndPoint address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Message\NetServerComponentSystem.cs:line 13
+   at ET.AwakeSystem`2.ET.IAwakeSystem<A>.Run(Entity o, A a) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\IAwakeSystem.cs:line 96
+   at ET.EventSystem.Awake[P1](Entity component, P1 p1) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 355
+2023-08-02 15:24:38.1490 (Scene.cs:52) scene create: Gate Gate1 2 262146 1
+2023-08-02 15:24:38.1490 (EventSystem.cs:355) System.TypeInitializationException: The type initializer for 'ET.KService' threw an exception.
+ ---> System.DllNotFoundException: Unable to load DLL 'kcp' or one of its dependencies: 找不到指定的模块。 (0x8007007E)
+   at ET.Kcp.ikcp_setoutput(KcpOutput output)
+   at ET.Kcp.KcpSetoutput(KcpOutput output) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\Kcp\Kcp.cs:line 193
+   at ET.KService..cctor() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Network\KService.cs:line 55
+   --- End of inner exception stack trace ---
+   at ET.KService..ctor(IPEndPoint ipEndPoint, ServiceType serviceType) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Network\KService.cs:line 33
+   at ET.Server.NetServerComponentSystem.AwakeSystem.Awake(NetServerComponent self, IPEndPoint address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Message\NetServerComponentSystem.cs:line 13
+   at ET.AwakeSystem`2.ET.IAwakeSystem<A>.Run(Entity o, A a) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\IAwakeSystem.cs:line 96
+   at ET.EventSystem.Awake[P1](Entity component, P1 p1) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 355
+2023-08-02 15:24:38.1490 (Scene.cs:52) scene create: Gate Gate2 3 262147 1
+2023-08-02 15:24:38.1490 (EventSystem.cs:355) System.TypeInitializationException: The type initializer for 'ET.KService' threw an exception.
+ ---> System.DllNotFoundException: Unable to load DLL 'kcp' or one of its dependencies: 找不到指定的模块。 (0x8007007E)
+   at ET.Kcp.ikcp_setoutput(KcpOutput output)
+   at ET.Kcp.KcpSetoutput(KcpOutput output) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\ThirdParty\Kcp\Kcp.cs:line 193
+   at ET.KService..cctor() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Network\KService.cs:line 55
+   --- End of inner exception stack trace ---
+   at ET.KService..ctor(IPEndPoint ipEndPoint, ServiceType serviceType) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Network\KService.cs:line 33
+   at ET.Server.NetServerComponentSystem.AwakeSystem.Awake(NetServerComponent self, IPEndPoint address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Message\NetServerComponentSystem.cs:line 13
+   at ET.AwakeSystem`2.ET.IAwakeSystem<A>.Run(Entity o, A a) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\IAwakeSystem.cs:line 96
+   at ET.EventSystem.Awake[P1](Entity component, P1 p1) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 355
+2023-08-02 15:24:38.1490 (Scene.cs:52) scene create: Location Location 4 262148 1
+2023-08-02 15:24:38.1490 (Scene.cs:52) scene create: Map Map1 5 262149 1
+2023-08-02 15:24:38.1490 (Scene.cs:52) scene create: Map Map2 6 262150 1
+2023-08-02 15:24:38.1490 (Scene.cs:52) scene create: Robot Robot01 200 262344 2
+2023-08-02 15:24:38.1490 (Scene.cs:52) scene create: RouterManager RouterManager 300 262444 3
+2023-08-02 15:24:38.1708 (EventSystem.cs:355) System.Exception: 请先在cmd中运行: netsh http add urlacl url=http://*:你的address中的端口/ user=Everyone, address: http://*:30300/
+ ---> System.Net.HttpListenerException (5): 拒绝访问。
+   at System.Net.HttpListener.AddPrefixCore(String registeredPrefix)
+   at System.Net.HttpListener.AddAllPrefixes()
+   at System.Net.HttpListener.Start()
+   at ET.Server.HttpComponentSystem.HttpComponentAwakeSystem.Awake(HttpComponent self, String address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Http\HttpComponentSystem.cs:line 29
+   --- End of inner exception stack trace ---
+   at ET.Server.HttpComponentSystem.HttpComponentAwakeSystem.Awake(HttpComponent self, String address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Http\HttpComponentSystem.cs:line 35
+   at ET.AwakeSystem`2.ET.IAwakeSystem<A>.Run(Entity o, A a) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\IAwakeSystem.cs:line 96
+   at ET.EventSystem.Awake[P1](Entity component, P1 p1) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 355
+2023-08-02 15:24:38.1708 (Scene.cs:52) scene create: Router Router01 301 262445 3
+2023-08-02 15:24:38.1708 (Scene.cs:52) scene create: Router Router02 302 262446 3
+2023-08-02 15:24:38.1708 (Scene.cs:52) scene create: Router Router03 303 262447 3
+2023-08-02 15:24:38.1708 (Scene.cs:52) scene create: Router Router04 304 262448 3
+2023-08-02 15:26:22.7394 (Init.cs:35) --CreateScenes 1 --LogLevel 2 --Process 1 --StartConfig StartConfig/Localhost
+2023-08-02 15:26:22.9553 (Scene.cs:52) scene create: Process Process 0 1266498719294160897 0
+2023-08-02 15:26:22.9963 (StartProcessConfig.cs:34) StartProcess info: 1 1 262144
+2023-08-02 15:26:22.9963 (StartSceneConfig.cs:35) 执行1次
+   at ET.StartSceneConfigCategory.EndInit() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Model\Generate\Config\StartSceneConfig.cs:line 35
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.SerializerBase`1.MongoDB.Bson.Serialization.IBsonSerializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize(IBsonSerializer serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonSerializer.Deserialize(IBsonReader bsonReader, Type nominalType, Action`1 configurator)
+   at MongoDB.Bson.Serialization.BsonSerializer.Deserialize(String json, Type nominalType, Action`1 configurator)
+   at ET.MongoHelper.FromJson(Type type, String str) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Serialize\MongoHelper.cs:line 147
+   at ET.ConfigComponent.LoadOneInThread(Type configType, String oneConfigBytes) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 82
+   at ET.ConfigComponent.<>c__DisplayClass6_1.<LoadAsync>b__0() in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\Config\ConfigComponent.cs:line 73
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+
+2023-08-02 15:26:23.0303 (Scene.cs:52) scene create: Realm Realm 1 262145 1
+2023-08-02 15:26:23.0303 (Scene.cs:52) scene create: Gate Gate1 2 262146 1
+2023-08-02 15:26:23.0303 (Scene.cs:52) scene create: Gate Gate2 3 262147 1
+2023-08-02 15:26:23.0303 (Scene.cs:52) scene create: Location Location 4 262148 1
+2023-08-02 15:26:23.0390 (Scene.cs:52) scene create: Map Map1 5 262149 1
+2023-08-02 15:26:23.0390 (Scene.cs:52) scene create: Map Map2 6 262150 1
+2023-08-02 15:26:23.0390 (Scene.cs:52) scene create: Robot Robot01 200 262344 2
+2023-08-02 15:26:23.0390 (Scene.cs:52) scene create: RouterManager RouterManager 300 262444 3
+2023-08-02 15:26:23.0390 (EventSystem.cs:355) System.Exception: 请先在cmd中运行: netsh http add urlacl url=http://*:你的address中的端口/ user=Everyone, address: http://*:30300/
+ ---> System.Net.HttpListenerException (5): 拒绝访问。
+   at System.Net.HttpListener.AddPrefixCore(String registeredPrefix)
+   at System.Net.HttpListener.AddAllPrefixes()
+   at System.Net.HttpListener.Start()
+   at ET.Server.HttpComponentSystem.HttpComponentAwakeSystem.Awake(HttpComponent self, String address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Http\HttpComponentSystem.cs:line 29
+   --- End of inner exception stack trace ---
+   at ET.Server.HttpComponentSystem.HttpComponentAwakeSystem.Awake(HttpComponent self, String address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Http\HttpComponentSystem.cs:line 35
+   at ET.AwakeSystem`2.ET.IAwakeSystem<A>.Run(Entity o, A a) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\IAwakeSystem.cs:line 96
+   at ET.EventSystem.Awake[P1](Entity component, P1 p1) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 355
+2023-08-02 15:26:23.0390 (Scene.cs:52) scene create: Router Router01 301 262445 3
+2023-08-02 15:26:23.0390 (Scene.cs:52) scene create: Router Router02 302 262446 3
+2023-08-02 15:26:23.0390 (Scene.cs:52) scene create: Router Router03 303 262447 3
+2023-08-02 15:26:23.0390 (Scene.cs:52) scene create: Router Router04 304 262448 3
+2023-08-02 15:33:32.2356 (Init.cs:35) --CreateScenes 1 --LogLevel 2 --Process 1 --StartConfig StartConfig/Localhost
+2023-08-02 15:33:32.4594 (Scene.cs:52) scene create: Process Process 0 1266528268669157377 0
+2023-08-02 15:33:32.5099 (StartProcessConfig.cs:34) StartProcess info: 1 1 262144
+2023-08-02 15:33:32.5667 (Scene.cs:52) scene create: Realm Realm 1 262145 1
+2023-08-02 15:33:32.5740 (Scene.cs:52) scene create: Gate Gate1 2 262146 1
+2023-08-02 15:33:32.5740 (Scene.cs:52) scene create: Gate Gate2 3 262147 1
+2023-08-02 15:33:32.5740 (Scene.cs:52) scene create: Location Location 4 262148 1
+2023-08-02 15:33:32.5740 (Scene.cs:52) scene create: Map Map1 5 262149 1
+2023-08-02 15:33:32.5740 (Scene.cs:52) scene create: Map Map2 6 262150 1
+2023-08-02 15:33:32.5740 (Scene.cs:52) scene create: Robot Robot01 200 262344 2
+2023-08-02 15:33:32.5740 (Scene.cs:52) scene create: RouterManager RouterManager 300 262444 3
+2023-08-02 15:33:32.5866 (EventSystem.cs:355) System.Exception: 请先在cmd中运行: netsh http add urlacl url=http://*:你的address中的端口/ user=Everyone, address: http://*:30300/
+ ---> System.Net.HttpListenerException (5): 拒绝访问。
+   at System.Net.HttpListener.AddPrefixCore(String registeredPrefix)
+   at System.Net.HttpListener.AddAllPrefixes()
+   at System.Net.HttpListener.Start()
+   at ET.Server.HttpComponentSystem.HttpComponentAwakeSystem.Awake(HttpComponent self, String address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Http\HttpComponentSystem.cs:line 29
+   --- End of inner exception stack trace ---
+   at ET.Server.HttpComponentSystem.HttpComponentAwakeSystem.Awake(HttpComponent self, String address) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Hotfix\Server\Module\Http\HttpComponentSystem.cs:line 35
+   at ET.AwakeSystem`2.ET.IAwakeSystem<A>.Run(Entity o, A a) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\IAwakeSystem.cs:line 96
+   at ET.EventSystem.Awake[P1](Entity component, P1 p1) in C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\DotNet\Core\Module\EventSystem\EventSystem.cs:line 355
+2023-08-02 15:33:32.5866 (Scene.cs:52) scene create: Router Router01 301 262445 3
+2023-08-02 15:33:32.5866 (Scene.cs:52) scene create: Router Router02 302 262446 3
+2023-08-02 15:33:32.5866 (Scene.cs:52) scene create: Router Router03 303 262447 3
+2023-08-02 15:33:32.5866 (Scene.cs:52) scene create: Router Router04 304 262448 3

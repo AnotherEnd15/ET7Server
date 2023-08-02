@@ -1,0 +1,10 @@
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\bin\Debug\Share.Analyzer.deps.json
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\bin\Debug\Share.Analyzer.dll
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\bin\Debug\Share.Analyzer.pdb
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\obj\Debug\Share.Analyzer.csproj.AssemblyReference.cache
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\obj\Debug\Share.Analyzer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\obj\Debug\Share.Analyzer.AssemblyInfoInputs.cache
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\obj\Debug\Share.Analyzer.AssemblyInfo.cs
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\obj\Debug\Share.Analyzer.csproj.CoreCompileInputs.cache
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\obj\Debug\Share.Analyzer.dll
+C:\Users\runqian\Downloads\ET-release7.2 (1)\ET-release7.2\Share\Analyzer\obj\Debug\Share.Analyzer.pdb
